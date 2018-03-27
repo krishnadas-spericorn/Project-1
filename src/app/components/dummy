@@ -1,0 +1,114 @@
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Home from './app/components/Home';
+import User from './app/components/User';
+
+class App extends Component {
+  render() {
+    return (
+      <Router>
+            <div>
+               <h2>Welcome to React Router Tutorial</h2>
+               <ul>
+                  <li><Link to={'/Home'}>Home</Link></li>
+                  <li><Link to={'/User'}>User</Link></li>
+               </ul>
+               
+                  <Route exact path='/Home' component={Home} />
+                  <Route exact path='/User' component={User} />
+               
+            </div>
+         </Router>
+    );
+  }
+}
+
+export default App;
+
+
+<ButtonGroup >
+        
+        <Button   color="primary"size="lg" >Home</Button>{' '}
+        <Button  color="primary"size="lg">Products</Button>{' '}
+        <Button color="primary"size="lg">About</Button>{' '}
+        <Button  color="primary"size="lg">info</Button>{' '}
+        <Button color="primary"size="lg">Contact us</Button>{' '}
+        <Button  color="primary"size="lg">Login</Button>
+        
+      <ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+      <DropdownToggle caret color="secondary"  size="lg">
+    Text
+  </DropdownToggle>
+  
+  <DropdownMenu>
+    <DropdownItem header>Header</DropdownItem>
+    <DropdownItem disabled>Action</DropdownItem>
+    <DropdownItem>Another Action</DropdownItem>
+    <DropdownItem divider/>
+    <DropdownItem>Another Action</DropdownItem>
+  </DropdownMenu>
+      </ButtonDropdown>
+  
+      </ButtonGroup>
+
+ <Card body outline color="primary">
+            <CardImg top width="50" height="400" src="http://www.lg.com/us/images/cell-phones/MD05904596/md05886241-350x350.jpg" alt="Card image cap" />
+            <CardBody>
+              <CardTitle>Apple</CardTitle>
+              <CardSubtitle>iPhone X</CardSubtitle>
+              <CardText>Also known as Apple iPhone 10, Apple iPhone Ten
+    Versions:
+    A1865 (USA, Hong Kong, Australia, New Zealand, China)
+A1901 (EMEA, UAE, LATAM, Canada, USA - ATT/T-Mobile, Singapore)</CardText>
+              <Button onClick={this.togglo} style={{ marginBottom: '1rem' }}>More Details</Button>
+              <Collapse isOpen={this.state.collapse}>
+                <Card body inverse outline color="primary" style={{ backgroundColor: '#333', borderColor: '#333' }}>
+                  <CardBody>
+                    Released 2017, October
+        174g, 7.7mm thickness
+        iOS 11.1.1, up to iOS 11.2.5
+        64/256GB storage, no card slot
+            </CardBody>
+                </Card>
+              </Collapse>
+            </CardBody>
+          </Card>
+          <Card body outline color="primary">
+            <CardImg top width="80" src="https://products.freedompop.com/sam-g900bk/sam-g900bk_C10.jpg" alt="Card image cap" />
+            <CardBody>
+              <CardTitle>Samsung</CardTitle>
+              <CardSubtitle>Galaxy A8+</CardSubtitle>
+              <CardText>Versions: A730F (Global Single-SIM); A730F/DS (Global Dual-SIM). Also known as Samsung Galaxy A8+ (2018) Duos with dual-SIM card slots</CardText>
+              <Button onClick={this.toggly} style={{ marginBottom: '1rem' }}>More Details</Button>
+              <Collapse isOpen={this.state.collapse}>
+                <Card>
+                  <CardBody>
+                    Released 2017, October
+        174g, 7.7mm thickness
+        iOS 11.1.1, up to iOS 11.2.5
+        64/256GB storage, no card slot
+            </CardBody>
+                </Card>
+              </Collapse>
+            </CardBody>
+          </Card>
+          <Card body outline color="primary">
+            <CardImg top width="30" height="500" src="https://n1.sdlcdn.com/imgs/b/3/t/Oppo-A37-16GB-Gold-SDL661615624-1-6811b.jpg" alt="Card image cap" />
+            <CardBody>
+              <CardTitle>Oppo</CardTitle>
+              <CardSubtitle>F5</CardSubtitle>
+              <CardText>Also known as Oppo F5 Plus or Oppo F5 6GB with 6 GB RAM</CardText>
+              <Button>More Details</Button>
+            </CardBody>
+          </Card>
+        </CardDeck>
+
+
+
+
+
+
+
+
+
+
